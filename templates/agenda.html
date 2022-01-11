@@ -1,0 +1,10 @@
+{% extends 'modelpage.html' %}
+
+{% block content %}
+    <h2>Agendamentos</h2>
+    <ul style="font-size: 18px">
+    {% for evento in eventos %}
+        <li>{{ evento.titulo }} - {{ evento.get_dataEvento }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

@@ -2,6 +2,9 @@
 
 {% block content %}
     <h2>Agendamentos</h2>
+    <a href="evento/"> <!-- 'colocando um link no botão'Redireciona o botão para a pagina evento/-->
+        <button type="button">Novo Evento</button>
+    </a>
     <ul style="font-size: 18px">
     {% for evento in eventos %}
         <li>{{ evento.titulo }} - {{ evento.get_dataEvento }}</li>
